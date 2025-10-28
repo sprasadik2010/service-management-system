@@ -16,7 +16,7 @@ app = FastAPI(title="Service Request Management System")
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Your React app's origin
+    allow_origins=["http://localhost:5173","https://service-management-system-fw4i.onrender.com"],  # Your React app's origin
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
